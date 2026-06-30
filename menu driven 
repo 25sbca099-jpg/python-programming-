@@ -1,0 +1,57 @@
+print("##### MENU #####")
+
+print("1.Check even or odd")
+
+print("2.sum of First N numbers")
+
+print("3.Multiplication table")
+
+print("4.Exit")
+
+print("
+
+")
+
+while True:
+
+choice=int(input("Enter your choice:"))
+
+if choice==1:
+num=int(input("Enter a number:"))
+
+if num%2==0:
+
+print(num," is even number")
+
+else:
+
+print (num," is odd number")
+
+elif choice==2:
+
+num=int(input("enter the value for N :"))
+
+tot=0
+
+for i in range(1,num+1):
+
+tot+=i
+
+print("The sum of first", num, "natural numbers are:",tot)
+
+elif choice==3:
+
+num=int(input("Enter a number:"))
+
+for i in range(1,11):
+print(num,"x",i,"=",num*i)
+
+elif choice==4:
+
+print("thank you")
+
+break
+
+else:
+
+print("Enter a vaid choice")
